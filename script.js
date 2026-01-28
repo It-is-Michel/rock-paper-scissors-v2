@@ -23,5 +23,7 @@ function getHumanChoice() {
         case "scissors":
         case "3":
             return "scissors";
+        
+        default: return "rock";
     }
 }
