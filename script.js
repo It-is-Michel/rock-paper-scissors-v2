@@ -27,3 +27,6 @@ function getHumanChoice() {
         default: return "rock";
     }
 }
+
+let humanScore = 0;
+let computerScore = 0;
