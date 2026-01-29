@@ -10,9 +10,32 @@ function getComputerChoice() {
 
 function getHumanChoice() {
     let humanChoice = prompt("Choose 'rock', 'paper' or 'scissors'", "rock")
-    
+
     return humanChoice;
 }
 
 let humanScore = 0;
 let computerScore = 0;
+
+function playRound(humanChoice, computerChoice) {
+
+    function computerWins() {
+        ++computerScore;
+        console.log(`Computer wins, ${computerChoice} beats ${humanChoice}!`);
+    }
+
+    function humanWins() {
+        ++humanScore;
+        console.log(`Human wins, ${humanChoice} beats ${computerChoice}!`);
+    }
+
+    if (humanChoice == computerChoice) {
+        console.log("Draw!");
+    } else if (humanChoice == "rock" && computerChoice == "paper"
+        || humanChoice == "paper" && computerChoice == "scissors"
+        || humanChoice == "scissors" && computerChoice == "rock") {
+        computerWins();
+    } else {
+        humanWins();
+    }
+}
