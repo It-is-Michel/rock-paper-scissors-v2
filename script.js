@@ -39,3 +39,19 @@ function playRound(humanChoice, computerChoice) {
         humanWins();
     }
 }
+
+function playGame() {
+    console.log(playRound(getHumanChoice(), getComputerChoice()));
+    console.log(playRound(getHumanChoice(), getComputerChoice()));
+    console.log(playRound(getHumanChoice(), getComputerChoice()));
+    console.log(playRound(getHumanChoice(), getComputerChoice()));
+    console.log(playRound(getHumanChoice(), getComputerChoice()));
+
+    if (humanScore > computerScore) {
+        console.log("Human won!");
+    } else if (computerScore > humanScore) {
+        console.log("Computer won!")
+    } else {
+        console.log("Hahaha, both lost!")
+    };
+}
