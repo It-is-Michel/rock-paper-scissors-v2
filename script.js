@@ -55,3 +55,5 @@ function playGame() {
         console.log("Hahaha, both lost!")
     };
 }
+
+playGame();
