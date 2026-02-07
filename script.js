@@ -50,5 +50,24 @@ function playGame() {
     };
 }
 
-playGame();
+let rockButtonElement = document.querySelector("#rock");
+let paperButtonElement = document.querySelector("#paper");
+let scissorsButtonElement = document.querySelector("#scissors");
 
+document.body.addEventListener("click", (e) => {
+    let humanSelection = "";
+    switch(e.target) {
+        case rockButtonElement:
+            humanSelection = "rock";
+            break;
+        case paperButtonElement:
+            humanSelection = "paper";
+            break;
+        case scissorsButtonElement:
+            humanSelection = "scissors";
+            break;
+    }
+
+    let computerChoice = getComputerChoice();
+    playRound(humanSelection, computerChoice);
+});
