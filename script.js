@@ -30,7 +30,7 @@ function playRound(humanChoice, computerChoice) {
     }
 
     if (humanChoice == computerChoice) {
-        console.log("Draw!");
+        updateDisplay(`It's a draw!`);
     } else if (humanChoice == "rock" && computerChoice == "paper"
         || humanChoice == "paper" && computerChoice == "scissors"
         || humanChoice == "scissors" && computerChoice == "rock") {
