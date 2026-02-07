@@ -40,14 +40,6 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-function playGame() {
-    if (humanScore > computerScore) {
-        console.log("Human won!");
-    } else if (computerScore > humanScore) {
-        console.log("Computer won!")
-    } else {
-        console.log("Hahaha, both lost!")
-    };
 }
 
 let rockButtonElement = document.querySelector("#rock");
