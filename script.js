@@ -13,6 +13,11 @@ let computerScore = 0;
 
 function playRound(humanChoice, computerChoice) {
 
+    if (humanScore == 5 || computerScore == 5) {
+        humanScore = 0;
+        computerScore = 0;
+    }
+
     function computerWins() {
         ++computerScore;
         updateDisplay(`Computer wins, ${computerChoice} beats ${humanChoice}!`);
