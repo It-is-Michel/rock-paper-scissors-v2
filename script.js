@@ -41,12 +41,6 @@ function playRound(humanChoice, computerChoice) {
 }
 
 function playGame() {
-    console.log(playRound(getHumanChoice(), getComputerChoice()));
-    console.log(playRound(getHumanChoice(), getComputerChoice()));
-    console.log(playRound(getHumanChoice(), getComputerChoice()));
-    console.log(playRound(getHumanChoice(), getComputerChoice()));
-    console.log(playRound(getHumanChoice(), getComputerChoice()));
-
     if (humanScore > computerScore) {
         console.log("Human won!");
     } else if (computerScore > humanScore) {
@@ -57,3 +51,4 @@ function playGame() {
 }
 
 playGame();
+
