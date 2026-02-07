@@ -21,12 +21,12 @@ function playRound(humanChoice, computerChoice) {
 
     function computerWins() {
         ++computerScore;
-        console.log(`Computer wins, ${computerChoice} beats ${humanChoice}!`);
+        updateDisplay(`Computer wins, ${computerChoice} beats ${humanChoice}!`);
     }
 
     function humanWins() {
         ++humanScore;
-        console.log(`Human wins, ${humanChoice} beats ${computerChoice}!`);
+        updateDisplay(`Human wins, ${humanChoice} beats ${computerChoice}!`);
     }
 
     if (humanChoice == computerChoice) {
