@@ -8,12 +8,6 @@ function getComputerChoice() {
     }
 }
 
-function getHumanChoice() {
-    let humanChoice = prompt("Choose 'rock', 'paper' or 'scissors'", "rock")
-
-    return humanChoice;
-}
-
 let humanScore = 0;
 let computerScore = 0;
 
