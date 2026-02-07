@@ -40,6 +40,22 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+let resultsDisplayDivElement = document.querySelector("#resultsDisplay");
+function updateDisplay(message) {
+
+    if (!typeof message === "string") return "ERROR";
+
+    resultsDisplayDivElement.textContent = message;
+
+    resultsDisplayDivElement.textContent += `\nHuman Score: ${humanScore}`;
+
+    resultsDisplayDivElement.textContent += `\nComputer Score: ${computerScore}`;
+
+    if (humanScore == 5) {
+        resultsDisplayDivElement.textContent += `Human won!`;
+    } else if (computerScore == 5) {
+        resultsDisplayDivElement.textContent += `Computer won!`;
+    }
 }
 
 let rockButtonElement = document.querySelector("#rock");
