@@ -39,16 +39,16 @@ function updateDisplay(message) {
 
     if (!typeof message === "string") return "ERROR";
 
-    resultsDisplayDivElement.textContent = message;
+    resultsDisplayDivElement.textContent = `Round info: ${message}`;
 
-    resultsDisplayDivElement.textContent += `\nHuman Score: ${humanScore}`;
+    resultsDisplayDivElement.textContent += ` | Human Score: ${humanScore}`;
 
-    resultsDisplayDivElement.textContent += `\nComputer Score: ${computerScore}`;
+    resultsDisplayDivElement.textContent += ` | Computer Score: ${computerScore}`;
 
     if (humanScore == 5) {
-        resultsDisplayDivElement.textContent += `Human won!`;
+        resultsDisplayDivElement.textContent += ` | Human won!`;
     } else if (computerScore == 5) {
-        resultsDisplayDivElement.textContent += `Computer won!`;
+        resultsDisplayDivElement.textContent += ` | Computer won!`;
     }
 }
 
